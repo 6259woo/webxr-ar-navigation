@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "N1",
+      "position": [
+        3.005133995511272,
+        6.878074116652743,
+        0
+      ],
+      "floor": "3F",
+      "type": "unknown",
+      "name": "",
+      "landmark": null
+    },
+    {
+      "id": "N2",
+      "position": [
+        18.27290141886132,
+        6.8745796463895745,
+        0
+      ],
+      "floor": "3F",
+      "type": "unknown",
+      "name": "",
+      "landmark": null
+    }
+  ],
+  "edges": [
+    {
+      "start": "N1",
+      "end": "N2",
+      "length": 15.27,
+      "directionality": "bidirectional"
+    }
+  ],
+  "markers": [],
+  "guide_lines": {
+    "horizontal": [],
+    "vertical": []
+  }
+}

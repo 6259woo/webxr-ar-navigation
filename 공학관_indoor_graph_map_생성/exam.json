@@ -1,0 +1,53 @@
+{
+    "nodes": [
+        {
+            "id": "N1",
+            "position": [0.0, 0.0, 0.0],
+            "floor": "1F",
+            "type": "marker",
+            "name": "입구",
+            "landmark": "M1"
+        },
+        {
+            "id": "N2",
+            "position": [3.0, 0.0, 0.0],
+            "floor": "1F",
+            "type": "corridor",
+            "name": "복도 시작",
+            "landmark": null
+        },
+        {
+            "id": "N3",
+            "position": [6.0, 0.0, 0.0],
+            "floor": "1F",
+            "type": "room",
+            "name": "회의실 A",
+            "landmark": null
+        }
+    ],
+
+    "edges": [
+        {
+            "start": "N1",
+            "end": "N2",
+            "length": 3.0,
+            "directionality": "bidirectional"
+        },
+        {
+            "start": "N2",
+            "end": "N3",
+            "length": 3.0,
+            "directionality": "bidirectional"
+        }
+    ],
+
+    "markers": [
+        {
+            "id": "M1",
+            "file": "marker_1.png",
+            "position": [0.0, 0.0, 0.0],
+            "orientation": [0.0, 0.0, 0.0]
+        }
+    ]
+}
+  

@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    background: #f8f9fb;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+.start-ar-button {
+    background-color: #1E56A0;
+    font-weight: 500;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.start-ar-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.position-button {
+    background-color: white;
+    top: 8px;
+    left: 90px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: -70px;
+    font-size: 14px;
+    padding: 10px 16px;
+    opacity: 0.7;
+}
+
+#ui-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map-ui {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    padding: 50px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0 20px 0;
+}
+
+#map-image {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #D6E4F0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#destination-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #D6E4F0;
+    border-radius: 6px;
+    background-color: white;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#confirm-destination {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    background-color: #1E56A0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.destination-display {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 230px;
+    color: #333;
+}
+
+.start-point-display {
+    position: fixed;
+    bottom: 200px;
+    left: 30px;
+    z-index: 1000;
+    color: white;
+}
+
+.start-point-display p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 6px 0;
+}
+
+.start-point-display span {
+    font-size: 15px;
+    color: #D6E4F0;
+    font-weight: bold;
+}
+
+.start-info {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #1E56A0;
+    top: 40px;
+}
+
+.ar-notice {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    color: white;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 1000;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#minimap-container {
+    display: none;
+    position: fixed;
+    top: 20px;     
+    left: 50%;     
+    transform: translateX(-50%);
+    width: 200px;
+    height: 140px;
+    border-radius: 8px;
+    border: 6px solid #D6E4F0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 8px;
+    z-index: 999;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#minimap-wrapper {
+    position: absolute;
+    width: 600px; /* 지도 크기 (더 크게 설정해 확대 효과) */
+    height: 600px;
+    top: 0;
+    left: 0;
+}
+
+#minimap {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+#minimap-marker {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: red;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    top: 50%; /* 초기 위치 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 정가운데 고정 */
+    z-index: 10;
+}
