@@ -8,11 +8,13 @@ WebXR 기술을 활용하여 별도의 앱 설치 없이 모바일 크롬(안드
 AR을 이용한 직관적인 길 안내와 효율적인 맵 제작 툴을 제공합니다.
 
 <!-- ![Demo Video1](./demo/demo_web.mp4)<br> -->
-<video src="./demo/demo_web.mp4" controls width="100%"></video>
+<!-- <video src="./demo/demo_web.mp4" controls width="100%"></video> -->
+[![Web Demo](https://img.youtube.com/vi/H0PALPWTd6Q/0.jpg)](https://www.youtube.com/watch?v=H0PALPWTd6Q)<br>
 AR을 이용해 보다 직관적인 길 안내가 가능합니다.
 
 <!-- ![Demo Video2](./demo/캡스톤_시연_툴.mp4)<br> -->
-<video src="./demo/demo_tool.mp4" controls width="100%"></video>
+<!-- <video src="./demo/demo_tool.mp4" controls width="100%"></video> -->
+[![Web Demo](https://img.youtube.com/vi/GhW_MLR3vos/0.jpg)](https://www.youtube.com/watch?v=GhW_MLR3vos)<br>
 2D도면을 이용한 graph map작성 툴의 시연 영상입니다.
 
 ## Key Features
@@ -89,4 +91,5 @@ node server.js
 
 ## 최종 시연 영상
 <!-- ![Demo Video3](./demo/2025-1캡스톤디자인시연영상.mp4) -->
-<video src="./demo/demo_final.mp4" controls width="100%"></video>
+<!-- <video src="./demo/demo_final.mp4" controls width="100%"></video> -->
+[![Web Demo](https://img.youtube.com/vi/eesUiA88n3M/0.jpg)](https://www.youtube.com/watch?v=eesUiA88n3M)
