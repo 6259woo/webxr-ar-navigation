@@ -7,10 +7,12 @@ WebXR 기술을 활용하여 별도의 앱 설치 없이 모바일 크롬(안드
 ## 프로젝트 Demo
 AR을 이용한 직관적인 길 안내와 효율적인 맵 제작 툴을 제공합니다.
 
-![Demo Video1](./demo/캡스톤_시연_웹.mp4)<br>
+<!-- ![Demo Video1](./demo/demo_web.mp4)<br> -->
+<video src="./demo/캡스톤_시연_웹.mp4" controls width="100%"></video>
 AR을 이용해 보다 직관적인 길 안내가 가능합니다.
 
-![Demo Video2](./demo/캡스톤_시연_툴.mp4)<br>
+<!-- ![Demo Video2](./demo/캡스톤_시연_툴.mp4)<br> -->
+<video src="./demo/캡스톤_시연_툴.mp4" controls width="100%"></video>
 2D도면을 이용한 graph map작성 툴의 시연 영상입니다.
 
 ## Key Features
@@ -86,4 +88,5 @@ node server.js
 **한유빈**: [서버 및 보고서 정리]
 
 ## 최종 시연 영상
-![Demo Video3](./demo/2025-1캡스톤디자인시연영상.mp4)
+<!-- ![Demo Video3](./demo/2025-1캡스톤디자인시연영상.mp4) -->
+<video src="./demo/2025-1캡스톤디자인시연영상.mp4" controls width="100%"></video>
